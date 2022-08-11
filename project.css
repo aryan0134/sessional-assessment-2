@@ -14,21 +14,25 @@ body{
 }
 #homename{
     position: absolute;
-    height: 30%;
-    width: 40%;
+    padding: 30px;
+    height: 15vw;
+    width: 35%;
     top: 40%;
     left: -2%;
     margin: auto;
     background: linear-gradient(30deg,#42E695,#3BB2B8);
     border-radius: 30px;
 }
-#homename h1{
+#homename p{
     color: white;
-    margin-left: 20%;
-    margin-top: -4%;
-    padding: 8%;
-    overflow: hidden;
-    font-size: 4.2vw;
+    text-align: center;
+    font-size: 5vw;
+    position: absolute;
+    top: 10%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 #nav-bar{
     width: 100%;
@@ -59,7 +63,7 @@ nav ul li a:hover{
     color: #ff5ea2 ;
 }
 
-@media only screen and (max-width:700px){
+@media only screen and (max-width:769px){
     nav ul{
         width: 100%;
         background: linear-gradient(#ff54a2,#ff575a);
@@ -89,6 +93,10 @@ nav ul li a:hover{
         overflow: hidden;
         transition: 0.5s;
     }
+    #homename{
+        height: 6vw;
+    }
+    
     
 }
 footer{
@@ -149,7 +157,119 @@ footer .copyright{
     font-size: 13px;
     color: #aaa;
 }
-#nav-list{
-    transition: 0.5s;
+section{
+    height: 75vh;
+    width: 100%;
+    display: flex;
+
+}
+#about{
+    height: 40vw;
+    position: relative;
+    background: linear-gradient( #2b5876 ,#4e4376);
+}
+#bio-text{
+    position: absolute;
+    padding: 5px;
+    height: 80%;
+    width: 60%;
+    top: 15%;
+    bottom: 0;
+    margin-left: 10%;
+    color: white;
+    text-align: center;
+    
+}
+#my-pic{
+    position: absolute;
+    height: 84%;
+    width: 20%;
+    top: 10%;
+    bottom: 0;
+    margin: auto;
+    margin-left: 74%;
+    background-image: url("mypic.jpg");
+    background-size: cover;
+    background-position: center;
+    box-shadow: #d7d2cc;
+}
+#responsive{
+    text-align: justify;
+    font-size: 2.7vw;
+}
+
+.logo{
+    position: absolute;
+    height: 10%;
+    width: 20%;
+    left: 0;
+    right: 0;
+    top: 2%;
+    margin: auto;
+    background-image: url("aboutme.jpg");
+    background-size:cover ;
+    background-position: center;
+}
+#contact{
+    position: relative;
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    background: linear-gradient( #bdc3c7 , #2c3e50);
+    
+}
+#details{
+    position: absolute;
+    height: 80%;
+    width: 40%;
+    margin: auto;
+    left: 15%;
+    top: 10%;
+    bottom: 10%;
+    background: linear-gradient( #4ca1af , #c4e0e5);
+    
+    
+
+    
+}
+#contact-us{
+    position: absolute;
+    margin-top: 4%;
+    height: 60%;
+    width: 40%;
+    right: 10%;
+    top: 10%;
+    bottom: 10%;
+    background-color: white;
+    
+}
+#form{
+    position: absolute;
+    margin-left: 5%;
+    margin-top: 26%;
+
+}
+#para{
+    position: absolute;
+    font-size: medium;
+    margin-left: 52.5%;
+    margin-top: 15%;
+
+}
+.div-heading{
+    position: absolute;
+    font-size: larger;
+    margin-left: 52%;
+    margin-top: 12%;
+}
+#list{
+    position: absolute;
+    font-size: 20px;
+    margin-top: 19%;
+    margin-left: 20%;
+}
+#div-heading{
+    position: absolute;
+    left: 20%;
 }
 
