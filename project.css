@@ -220,17 +220,13 @@ section{
 }
 #details{
     position: absolute;
-    height: 80%;
+    height: 35vw;
     width: 40%;
     margin: auto;
     left: 15%;
     top: 10%;
     bottom: 10%;
     background: linear-gradient( #4ca1af , #c4e0e5);
-    
-    
-
-    
 }
 #details i{
     margin-right: 10px;
@@ -248,32 +244,43 @@ section{
 }
 #form{
     position: absolute;
-    margin-left: 5%;
-    margin-top: 26%;
+    bottom: 12%;
+    left: 5%;
 
 }
 #para{
     position: absolute;
-    font-size: medium;
-    margin-left: 52.5%;
-    margin-top: 15%;
+    padding: 5px;
+    font-size: 1.3vw;
+    text-align: justify;
+    margin-top: 13%;
 
 }
 .div-heading{
     position: absolute;
-    font-size: larger;
-    margin-left: 52%;
-    margin-top: 12%;
+    font-size: 3vw;
+    left: 28%;
+    margin: auto;
+    margin-top: 5%;
 }
 #list{
     position: absolute;
-    font-size: 20px;
+    font-size: 1.5vw;
     margin-top: 19%;
-    margin-left: 20%;
+    margin-left: 5%;
+    padding: 3vw;
 }
 #div-heading{
     position: absolute;
+    font-size: 3vw;
     left: 20%;
+}
+.topinput{
+    width: 8vw;
+}
+#message{
+    width: 20vw;
+    margin-top: 15px;
 }
 #Blog{
     position: relative;
@@ -287,8 +294,10 @@ section{
     margin-left: 37%;
     margin-top: 2%;
     height: 19%;
-    width: 22%;
+    width: 20.5vw;
     background-image: url("blog.jpeg");
+    background-size: cover;
+    background-position: center;
 }
 
 #blog-making{
@@ -301,8 +310,19 @@ section{
     position: absolute;
     margin: auto;
     margin-top: 5%;
-    height: 65%;
+    height: 55%;
     width: 65%;
+}
+#btn1{
+    position: absolute;
+    height: 8%;
+    width: 15%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 5%;
+    background: linear-gradient(#d2af7700,hsl(173, 16%, 89%));
+    border-radius: 50%;
 }
 #Api{
     flex-direction: column;
