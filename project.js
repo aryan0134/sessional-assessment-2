@@ -54,23 +54,32 @@ function toggleMode(){
     count+=1;
 }
 btn.addEventListener("click",toggleMode)
-document.getElementsByClassName("page1").addEventListener(onclick,()=>{
-    const xhr=new XMLHttpRequest();
 
-    xhr.open('get','https://jsonplaceholder.typicode.com/posts?utm_source=Mailerlite&utm_medium=E-mail&utm_campaign=Test%20Series&utm_term=2022-08-11');
-    xhr.onreadystatechange = () => {
-        if(xhr.status === 200 && xhr.readyState === 4) {
-            const response = JSON.parse(xhr.responseText)
-            var x=1
-            for(let i in response.title){
-                document.getElementById("title1").innerHTML=i
-                console.log(i)
-            }
-            // let output = ''
-            //     for(let i=0; i < response.items.length; i++) {
-            //         console.log(i)
-            //     }
-        }
-    }
-    xhr.send();
-})
+
+window.onload = function () {
+    var x = new XMLHttpRequest();
+    x.onload = function () {
+      var json = JSON.parse(x.response);
+      console.log(json);
+      for (let i = 0; i < json.length; i++) {
+        let ele = document.createElement("div");
+        let heading = document.createElement("div");
+        let content = document.createElement("div");
+        heading.innerHTML = `<h4 class="apititle">${json[i].title}</h4>`;
+        content.innerHTML = `<p class="pcontent">${json[i].body}</p>`;
+        ele.style.cssText =
+          "background-color:rgb(146, 168, 209);width:30vw;height:30vh;border:2px solid black;border-radius:10px 10px 10px 10px;margin-top:0.5rem";
+        heading.style.cssText = "color:rgb(51, 73, 138);"
+        content.style.cssText = "color:white;"
+        ele.appendChild(heading);
+        ele.appendChild(content);
+        document.getElementById("data").appendChild(ele);
+      }
+      console.log(typeof json[2].body);
+    };
+    x.open(
+      "get",
+      "https://jsonplaceholder.typicode.com/posts?utm_source=Mailerlite&utm_medium=E-mail&utm_campaign=Test%20Series&utm_term=2022-08-11"
+    );
+    x.send();
+  };
