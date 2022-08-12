@@ -360,4 +360,21 @@ section{
     margin-top: 2%;
     color: white;
 }
+#nightmode{
+    position: absolute;
+    height: 98%;
+    width: 4%;
+    top: 0;
+    bottom: 0;
+    left: 2%;
+    margin: auto;
+}
+#nightmode i{
+    margin-top: -2px;
+    margin-left: 6px;
+
+}
+.baby{
+    color: #ffff00e0;
+}
 
