@@ -54,24 +54,23 @@ function toggleMode(){
     count+=1;
 }
 btn.addEventListener("click",toggleMode)
+document.getElementsByClassName("page1").addEventListener(onclick,()=>{
+    const xhr=new XMLHttpRequest();
 
-const xhr=new XMLHttpRequest();
-
-xhr.onload=function(){
-    if(this.status===200){
-    const resp=this.responseText;
-    console.log(resp);
-    const arr=resp;
-    console.log(arr);
-    // var x="";
-    // for(let i in resp){
-    //    x+=i;
-    // }
-    // console.log(x);
-
-    // }
+    xhr.open('get','https://jsonplaceholder.typicode.com/posts?utm_source=Mailerlite&utm_medium=E-mail&utm_campaign=Test%20Series&utm_term=2022-08-11');
+    xhr.onreadystatechange = () => {
+        if(xhr.status === 200 && xhr.readyState === 4) {
+            const response = JSON.parse(xhr.responseText)
+            var x=1
+            for(let i in response.title){
+                document.getElementById("title1").innerHTML=i
+                console.log(i)
+            }
+            // let output = ''
+            //     for(let i=0; i < response.items.length; i++) {
+            //         console.log(i)
+            //     }
+        }
     }
-};
-
-xhr.open('get','https://jsonplaceholder.typicode.com/posts?utm_source=Mailerlite&utm_medium=E-mail&utm_campaign=Test%20Series&utm_term=2022-08-11');
-xhr.send();
+    xhr.send();
+})

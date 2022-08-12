@@ -166,7 +166,7 @@ section{
 #about{
     height: 40vw;
     position: relative;
-    background: linear-gradient( #2b5876 ,#4e4376);
+    background: linear-gradient(#2193b0 , #6dd5ed);
 }
 #bio-text{
     position: absolute;
@@ -215,7 +215,7 @@ section{
     height: 90vh;
     width: 100%;
     display: flex;
-    background: linear-gradient( #bdc3c7 , #2c3e50);
+    background: linear-gradient( #ed4264 , #ffedbc);
     
 }
 #details{
@@ -226,7 +226,7 @@ section{
     left: 15%;
     top: 10%;
     bottom: 10%;
-    background: linear-gradient( #4ca1af , #c4e0e5);
+    background: linear-gradient( #42275a , #734b6d);
 }
 #details i{
     margin-right: 10px;
